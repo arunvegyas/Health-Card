@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.hiddencoders.healthcare.ui.existing_reg.ExistingRegistrationViewmodel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <EditText
+                    android:id="@+id/etUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="@null"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:minHeight="60dp"
+                    android:padding="10dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/etGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="@null"
+                    android:focusable="false"
+                    android:hint="Gender"
+                    android:inputType="text"
+                    android:minHeight="60dp"
+                    android:onClick="onClick"
+                    android:padding="10dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/etDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="@null"
+                    android:focusable="false"
+                    android:hint="Date of birth"
+                    android:inputType="text"
+                    android:minHeight="60dp"
+                    android:padding="10dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/etCardNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="@null"
+                    android:hint="Card Number"
+                    android:inputType="text"
+                    android:minHeight="60dp"
+                    android:padding="10dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/etContactNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="@null"
+                    android:hint="Contact Number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:minHeight="60dp"
+                    android:padding="10dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/etAdharNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="@null"
+                    android:hint="Adhar Card No"
+                    android:inputType="text"
+                    android:maxLength="12"
+                    android:minHeight="60dp"
+                    android:padding="10dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/etLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corners"
+                    android:backgroundTint="@null"
+                    android:hint="Location"
+                    android:inputType="text"
+                    android:minHeight="60dp"
+                    android:padding="10dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corners"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/sp_blood_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@null"
+                        android:dropDownWidth="match_parent"
+                        android:dropDownVerticalOffset="60dp"
+                        android:hint="Select Farmer"
+                        android:minHeight="60dp"
+                        android:singleLine="true"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="50dp"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btSave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/button_rounded_corners"
+                        android:minHeight="50dp"
+                        android:onClick="onClick"
+
+                        android:text="Edit"
+                        android:textColor="@color/white" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button_rounded_corners"
+                        android:minHeight="50dp"
+                        android:text="Cancel"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</layout>

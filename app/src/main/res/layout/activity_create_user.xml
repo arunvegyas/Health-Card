@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16sp">
+        <TextView
+            android:id="@+id/idLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:layout_gravity="end"
+            android:background="@drawable/rounded_corners"
+            android:drawableLeft="@drawable/ic_logout"
+            android:drawablePadding="5dp"
+            android:padding="10dp"
+            android:text="Logout"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo_final" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Register Executive"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@null"
+            android:hint="Firstname"
+            android:inputType="text"
+            android:minHeight="60dp"
+            android:padding="10dp"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/etLastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@null"
+            android:hint="Lastname"
+            android:inputType="text"
+            android:minHeight="60dp"
+            android:padding="10dp"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/etMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@null"
+            android:hint="Mobile"
+            android:inputType="text"
+            android:maxLength="10"
+            android:minHeight="60dp"
+            android:padding="10dp"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@null"
+            android:hint="Email"
+            android:inputType="text"
+            android:minHeight="60dp"
+            android:padding="10dp"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@null"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="60dp"
+            android:padding="10dp"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_rounded_corners"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+
+            android:text="Register"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+</RelativeLayout>
